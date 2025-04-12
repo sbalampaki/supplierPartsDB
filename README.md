@@ -1,7 +1,6 @@
 # supplierPartsDB
 a simple database application connecting to the supplierParts database with python and flask
 
-
 Software and Tools I used for this project:
 1. IDE: Visual Studio Code
 2. Database: MySQLWorkBench
@@ -10,7 +9,6 @@ Software and Tools I used for this project:
 5. Google Web Browser: To run my website
 
 Steps to run the project:
-
 Where to download or install the IDE and other tools:
 1. Download Visual Studio Code on your system:
      https://visualstudio.microsoft.com/
