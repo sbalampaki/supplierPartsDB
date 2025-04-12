@@ -1,0 +1,30 @@
+<h2>Find Suppliers for a Part</h2>
+<form method="POST">
+  Enter Part Number: <input type="text" name="part_no">
+  <input type="submit" value="Search">
+</form>
+
+{% if error %}
+    <div style="color: red; margin: 20px;">
+        <p>{{ error }}</p>
+    </div>
+{% elif msg %}
+    <div style="color: green; margin: 20px;">
+        <p>{{ msg }}</p>
+    </div>
+{% endif %}
+
+{% if suppliers %}
+    <table border="1">
+        <tr><th>Sno</th><th>Sname</th><th>Status</th><th>City</th></tr>
+        {% for s in suppliers %}
+            <tr>
+                <td>{{ s.Sno }}</td>
+                <td>{{ s.Sname }}</td>
+                <td>{{ s.Status }}</td>
+                <td>{{ s.City }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+<a href="/">Back to Home</a>
